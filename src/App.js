@@ -1,13 +1,31 @@
 import React, { Component } from 'react';
+import Projects from './components/projects';
 import './App.css';
-
 class App extends Component {
-
-	render() {
+    constructor() {
+        super()
+        this.state = {projects: [
+                {
+                    title: 'Header',
+                    category: 'Front End'
+                },
+                {
+                    title: 'Footer',
+                    category: 'Front End'
+                },
+                {
+                    title: 'Content',
+                    category: 'Front End'
+                }
+            ]
+        }
+    }
+    render() {
         return (
-                <div>
-                    <h1 onClick="test()">Welcome</h1>
+                <div className="App">
+                    <Projects projects={this.state.projects}/>
                 </div>
+
                 );
     }
 }
