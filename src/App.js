@@ -1,20 +1,15 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
-  render() {
-    return (
-      <div>
-        <div>
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          Hello World!
-        </p>
-      </div>
-    );
-  }
+
+	render() {
+        return (
+                <div>
+                    <h1 onClick="test()">Welcome</h1>
+                </div>
+                );
+    }
 }
 
 export default App;
